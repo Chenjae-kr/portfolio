@@ -514,6 +514,10 @@ h3 {
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
+.project-card-rich {
+    min-height: 560px;
+}
+
 .project-card-rich .project-media {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -531,11 +535,43 @@ h3 {
     display: block;
 }
 
-.project-actions {
+/* Default(요약) + Hover(성과/CTA) 레이어 */
+.project-card-rich::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 58%;
+    background: linear-gradient(180deg, rgba(2, 6, 23, 0) 0%, rgba(2, 6, 23, 0.78) 52%, rgba(2, 6, 23, 0.9) 100%);
+    opacity: 0;
+    transition: var(--transition);
+    pointer-events: none;
+}
+
+.project-card-rich .feature-list,
+.project-card-rich .project-actions {
+    position: absolute;
+    left: 2rem;
+    right: 2rem;
+    opacity: 0;
+    transform: translateY(14px);
+    transition: var(--transition);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.project-card-rich .feature-list {
+    bottom: 78px;
+    margin: 0;
+}
+
+.project-card-rich .project-actions {
+    bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: auto;
+    margin: 0;
 }
 
 .project-actions .portfolio-link {
@@ -545,6 +581,43 @@ h3 {
 .project-actions button.portfolio-link {
     cursor: pointer;
     font-family: inherit;
+}
+
+.project-card-rich:hover::after {
+    opacity: 1;
+}
+
+.project-card-rich:hover .feature-list,
+.project-card-rich:hover .project-actions {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+@media (hover: none), (max-width: 900px) {
+    .project-card-rich {
+        min-height: auto;
+    }
+
+    .project-card-rich::after {
+        display: none;
+    }
+
+    .project-card-rich .feature-list,
+    .project-card-rich .project-actions {
+        position: static;
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+    }
+
+    .project-card-rich .feature-list {
+        margin-top: 1rem;
+    }
+
+    .project-card-rich .project-actions {
+        margin-top: 0.75rem;
+    }
 }
 
 .screenshot-modal {
