@@ -514,6 +514,95 @@ h3 {
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
+.project-card-rich .project-media {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    background: var(--bg-base);
+}
+
+.project-card-rich .project-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.project-actions .portfolio-link {
+    margin-top: 0;
+}
+
+.project-actions button.portfolio-link {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.screenshot-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 1200;
+}
+
+.screenshot-modal.open {
+    display: block;
+}
+
+.screenshot-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.72);
+    backdrop-filter: blur(2px);
+}
+
+.screenshot-dialog {
+    position: relative;
+    max-width: 1000px;
+    margin: 4vh auto;
+    width: min(92vw, 1000px);
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    box-shadow: var(--shadow-hover);
+    overflow: hidden;
+}
+
+.screenshot-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-close {
+    background: transparent;
+    border: 0;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.screenshot-body {
+    padding: 1rem;
+}
+
+.screenshot-body img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
 /* Certificate */
 .cert-list {
     display: flex;
