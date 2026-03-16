@@ -3,459 +3,463 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>최인재 | Web Developer Portfolio</title>
+    <title>최인재 | Enterprise Web Developer</title>
+    <meta name="description" content="기업 시스템의 복잡한 흐름을 보기 좋은 화면과 견고한 구조로 바꾸는 웹 개발자 최인재의 포트폴리오입니다.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2316120f'/%3E%3Ctext x='50%25' y='53%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia, serif' font-size='30' font-weight='700' fill='%23fff5ea'%3ECI%3C/text%3E%3C/svg%3E" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="bg-shape shape-1"></div>
-    <div class="bg-shape shape-2"></div>
-    <header>
-        <nav>
-            <a href="/" class="logo">최인재</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certificate">Certificate</a></li>
-            </ul>
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="orb orb-a" aria-hidden="true"></div>
+    <div class="orb orb-b" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+        <nav class="site-nav">
+            <a href="#top" class="brand">
+                <span class="brand-mark">CI</span>
+                <span class="brand-copy">
+                    <strong>CHOI INJAE</strong>
+                    <span>Enterprise Web Developer</span>
+                </span>
+            </a>
+            <div class="nav-links">
+                <a href="#story">Story</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#stack">Stack</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="hero">
-            <h1>Problem Solver · <span class="highlight">최인재</span></h1>
-            <p>Enterprise Application Development</p>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>서비스를 단순히 구현하는 데서 끝내지 않고, 반복 업무 자동화와 운영 안정성 향상을 함께 설계하는 개발을 지향합니다.</p>
-            
-            <p>2022년부터 EMRO에서 삼성전자, 현대, S-OIL, 만도 등 대기업의 SRM 및 전자구매 시스템 구축 프로젝트에 참여했습니다. 백엔드 개발을 중심으로 프론트엔드 UI 구현, 데이터베이스 설계까지 폭넓게 경험하며 서비스 전반을 이해하는 개발 역량을 쌓았습니다.</p>
-            
-            <p>최근에는 다양한 사이드 프로젝트를 수행하며, 단순 기능 구현을 넘어 사용자 경험과 유지보수성까지 함께 고려하는 바이브 코딩을 실천하고 있습니다. 빠르게 아이디어를 구현하되 구조적 완성도도 놓치지 않기 위해 설계·개발·개선 사이클을 반복하며, 더 나은 제품 품질을 만드는 데 집중하고 있습니다.</p>
-            
-            <p>문제를 발견하면 원인을 구조적으로 분석하고, 재시도·검증·모니터링을 포함한 운영 관점으로 해결합니다. 또한 업계 기술 동향과 신기술, AI Agent 활용 방식에 꾸준히 관심을 갖고 있으며, AI Agent 기반 워크플로우를 실무와 개인 프로젝트에 적용해 생산성과 신뢰성을 높이고 있습니다. 앞으로도 변화하는 기술 환경 속에서 자동화 중심 백엔드 엔지니어로 빠르게 학습하고 실전에 연결하는 개발자가 되겠습니다.</p>
-
-            <div class="contact-links" style="margin-top: 20px;">
-                <a href="https://github.com/Chenjae-kr" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                    GitHub
-                </a>
-                <a href="https://chen-jae.tistory.com/" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
-                    Blog
-                </a>
-            </div>
-        </section>
-
-        <section id="experience">
-            <h2>💼 Work Experience</h2>
-
-            <div class="experience-card">
-                <div class="exp-header">
-                    <h3>EMRO.</h3>
-                    <span class="exp-period">2022.02 - Now</span>
-                </div>
-                <p class="exp-role">Web Application Developer</p>
-
-                <div class="project-list">
-                    <div class="project-item">
-                        <h4>kt P&M 평가 및 공사원가 시스템 구축</h4>
-                        <span class="project-period">2025.12 ~ </span>
-                    </div>
-                    <div class="project-item">
-                        <h4>S-OIL 기능 개선</h4>
-                        <span class="project-period">2025.10 - 2025.12</span>
-                    </div>
-                    <div class="project-item">
-                        <h4>만도 SRM 구축</h4>
-                        <span class="project-period">2025.06 - 2025.10</span>
-                    </div>
-                    <div class="project-item">
-                        <h4>삼성전자 N-SRM 구축</h4>
-                        <span class="project-period">2024.10 - 2025.05</span>
-                    </div>
-                    <div class="project-item">
-                        <h4>한국지역난방공사 전자계약시스템 고도화</h4>
-                        <span class="project-period">2024.02 - 2024.10</span>
-                    </div>
-                    <div class="project-item">
-                        <h4>HD현대 HI-SRM 구축</h4>
-                        <span class="project-period">2023.06 - 2024.01</span>
-                    </div>
-                    <div class="project-item">
-                        <h4>kt cloud 구매시스템 구축</h4>
-                        <span class="project-period">2023.01 - 2023.06</span>
-                    </div>
-                    <div class="project-item">
-                        <h4>현대트랜시스 TPOS 타 OE 대응 고도화</h4>
-                        <span class="project-period">2022.09 - 2022.12</span>
-                    </div>
-                    <div class="project-item">
-                        <h4>삼성서울병원 구매시스템 UI 컨버전</h4>
-                        <span class="project-period">2022.03 - 2022.08</span>
-                    </div>
+    <main class="site-main">
+        <section class="hero" data-reveal>
+            <div class="hero-copy">
+                <p class="eyebrow">PORTFOLIO / 2026 / SEOUL</p>
+                <h1>
+                    기업 시스템의
+                    <span>복잡한 흐름을</span>
+                    보기 좋게 만드는
+                    <em>웹 개발자</em>
+                </h1>
+                <p class="hero-lead">
+                    Spring Framework와 Vue.js를 중심으로 구매, SRM, 백오피스 서비스를 구축해 왔습니다.
+                    API 설계부터 화면 구현, 데이터 흐름 정리까지 끊기지 않는 사용자 경험을 만드는 데 집중합니다.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#projects">Selected Work</a>
+                    <a class="button button-light" href="https://github.com/Chenjae-kr" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a class="button button-light" href="https://chen-jae.tistory.com/" target="_blank" rel="noopener noreferrer">Blog</a>
                 </div>
             </div>
 
-            <div class="experience-card">
-                <div class="exp-header">
-                    <h3>한국생산기술연구원</h3>
-                    <span class="exp-period">2020.01 - 2020.06</span>
+            <aside class="hero-panel">
+                <div class="panel-card panel-card-dark tilt-left">
+                    <p class="panel-label">NOW</p>
+                    <h2>EMRO에서<br>기업 구매 시스템을 개발합니다.</h2>
+                    <p>
+                        대기업 SRM과 전자구매 프로젝트를 다수 수행하며
+                        화면 구조, 업무 흐름, 운영 안정성을 함께 다뤄 왔습니다.
+                    </p>
                 </div>
-                <p class="exp-role">Intern - 지능형생산시스템 연구부문</p>
-                <p class="exp-desc">영상처리 알고리즘 기반 공구 마모도 측정 프로그램을 개발해, 기존 측정 대비 작업 시간을 약 50% 단축했습니다. (파일럿 테스트 기준)</p>
-            </div>
+                <div class="panel-row">
+                    <div class="panel-card tilt-right">
+                        <p class="stat-value">4+</p>
+                        <p class="stat-label">years of delivery</p>
+                    </div>
+                    <div class="panel-card accent-card">
+                        <p class="stat-value">8+</p>
+                        <p class="stat-label">enterprise projects</p>
+                    </div>
+                </div>
+                <div class="panel-card memo-card">
+                    <p class="panel-label">FOCUS</p>
+                    <ul>
+                        <li>복잡한 도메인을 읽기 쉬운 UI로 정리</li>
+                        <li>프론트와 백엔드를 함께 보는 구현 감각</li>
+                        <li>LLM, RAG를 활용한 AI 서비스 확장 관심</li>
+                    </ul>
+                </div>
+            </aside>
         </section>
-        
-        <section id="projects">
-            <h2>🧪 Projects</h2>
-            <div class="project-grid">
-                
-                <article class="project-card project-card-rich">
-                    <div class="project-media">
-                        <img src="https://opengraph.githubassets.com/1/Chenjae-kr/dev-tools" alt="Dev Tools screenshot" loading="lazy">
-                    </div>
-                    <div class="project-header">
-                        <h3>Dev Tools</h3>
-                        <span class="project-lang">HTML</span>
-                    </div>
-                    <p>개발 작업을 빠르게 처리하기 위한 웹 기반 유틸리티 프로젝트입니다.</p>
-                    <div class="tag-list">
-                        <span class="tag-sm">HTML</span>
-                        <span class="tag-sm">Internal Tools</span>
-                        <span class="tag-sm">Productivity</span>
-                    </div>
-                    <ul class="feature-list">
-                        <li>개발 생산성을 높이는 도구 모음</li>
-                        <li>빠른 접근과 즉시 실행 중심 UX</li>
-                        <li>실무형 내부 도구 실험/개선</li>
-                    </ul>
-                    <div class="project-actions">
-                        <a href="https://chenjae-kr.github.io/dev-tools/" class="portfolio-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                        <a href="https://github.com/Chenjae-kr/dev-tools" class="portfolio-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <button class="portfolio-link js-open-shots" data-images="https://opengraph.githubassets.com/1/Chenjae-kr/dev-tools" data-title="Dev Tools">Screenshots</button>
-                    </div>
-                </article>
 
-                <article class="project-card project-card-rich">
-                    <div class="project-media">
-                        <img src="https://opengraph.githubassets.com/1/Chenjae-kr/daily-news" alt="Daily News screenshot" loading="lazy">
-                    </div>
-                    <div class="project-header">
-                        <h3>Daily News</h3>
-                        <span class="project-lang">JavaScript</span>
-                    </div>
-                    <p>오늘의 주요 이슈를 정리하고 기록하는 데일리 뉴스 자동화 프로젝트입니다.</p>
-                    <div class="tag-list">
-                        <span class="tag-sm">JavaScript</span>
-                        <span class="tag-sm">Automation</span>
-                        <span class="tag-sm">Daily Report</span>
-                    </div>
-                    <ul class="feature-list">
-                        <li>일일 뉴스 리포트 파일 자동 생성</li>
-                        <li>카테고리 기반 요약 구조</li>
-                        <li>반복 작업 자동화 워크플로우</li>
-                    </ul>
-                    <div class="project-actions">
-                        <a href="https://chenjae-kr.github.io/daily-news/" class="portfolio-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                        <a href="https://github.com/Chenjae-kr/daily-news" class="portfolio-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <button class="portfolio-link js-open-shots" data-images="https://opengraph.githubassets.com/1/Chenjae-kr/daily-news" data-title="Daily News">Screenshots</button>
-                    </div>
-                </article>
-
-                <article class="project-card project-card-rich">
-                    <div class="project-media">
-                        <img src="https://opengraph.githubassets.com/1/Chenjae-kr/Portfolio-app" alt="Portfolio App screenshot" loading="lazy">
-                    </div>
-                    <div class="project-header">
-                        <h3>Portfolio App</h3>
-                        <span class="project-lang">Java</span>
-                    </div>
-                    <p>다중 자산 포트폴리오 관리 서비스로 실시간 평가/비교/백테스팅을 지원합니다.</p>
-                    <div class="tag-list">
-                        <span class="tag-sm">Spring Boot</span>
-                        <span class="tag-sm">Portfolio</span>
-                        <span class="tag-sm">Backtesting</span>
-                    </div>
-                    <ul class="feature-list">
-                        <li>다중 자산 성과 추적</li>
-                        <li>포트폴리오 비교 및 리밸런싱 시뮬레이션</li>
-                        <li>투자 전략 백테스트</li>
-                    </ul>
-                    <div class="project-actions">
-                        <a href="https://github.com/Chenjae-kr/Portfolio-app" class="portfolio-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                        <a href="https://github.com/Chenjae-kr/Portfolio-app" class="portfolio-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <button class="portfolio-link js-open-shots" data-images="https://opengraph.githubassets.com/1/Chenjae-kr/Portfolio-app" data-title="Portfolio App">Screenshots</button>
-                    </div>
-                </article>
-
-                <article class="project-card project-card-rich">
-                    <div class="project-media">
-                        <img src="https://opengraph.githubassets.com/1/hyundai-it-e-team3" alt="MSA 온라인몰 및 백오피스 screenshot" loading="lazy">
-                    </div>
-                    <div class="project-header">
-                        <h3>MSA기반 온라인몰 및 백오피스</h3>
-                        <span class="project-period">2021.11 - 2021.12</span>
-                    </div>
-                    <p class="project-desc">현대 IT&E SW 개발자 양성과정</p>
-                    <p>트래픽과 어뷰징이 많은 온라인몰 특성을 고려하여 대규모 트래픽 가정 설계</p>
-                    <div class="tag-list">
-                        <span class="tag-sm">Spring Boot</span>
-                        <span class="tag-sm">Vue.js</span>
-                        <span class="tag-sm">AWS</span>
-                    </div>
-                    <ul class="feature-list">
-                        <li>고객 주문 및 Back Office 주문 관리 API 개발</li>
-                        <li>REST API 개발</li>
-                        <li>Vue.js 기반 SPA 방식의 모바일 웹 개발</li>
-                        <li>Spring 기반 MPA 방식의 백오피스 개발</li>
-                    </ul>
-                    <div class="project-actions">
-                        <a href="https://github.com/hyundai-it-e-team3" class="portfolio-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href="https://drive.google.com/file/d/1g6rEjeU5dCoL9S-Lexhh7RDHnPBaD606/view?usp=sharing" class="portfolio-link" target="_blank" rel="noopener noreferrer">Portfolio</a>
-                        <button class="portfolio-link js-open-shots" data-images="https://opengraph.githubassets.com/1/hyundai-it-e-team3" data-title="MSA 온라인몰">Screenshots</button>
-                    </div>
-                </article>
-
-                <article class="project-card project-card-rich">
-                    <div class="project-media">
-                        <img src="https://opengraph.githubassets.com/1/Chenjae/Pamuk" alt="냉파먹 screenshot" loading="lazy">
-                    </div>
-                    <div class="project-header">
-                        <h3>냉파먹</h3>
-                        <span class="project-period">2021.06 - 2021.07</span>
-                    </div>
-                    <p class="project-desc">프로젝트 기반 개발자 양성과정</p>
-                    <p>개인 별 식재료 재고에 따른 추천 레시피 제공 서비스</p>
-                    <div class="tag-list">
-                        <span class="tag-sm">Spring Boot</span>
-                        <span class="tag-sm">JavaScript</span>
-                        <span class="tag-sm">HTML</span>
-                        <span class="tag-sm">CSS</span>
-                    </div>
-                    <ul class="feature-list">
-                        <li>Spring Boot를 활용한 Back-end 구축</li>
-                        <li>레시피 공유 게시판 개발 담당</li>
-                    </ul>
-                    <div class="project-actions">
-                        <a href="https://github.com/Chenjae/Pamuk" class="portfolio-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href="https://drive.google.com/file/d/1vCvuhj-yZup0QrCbvwpGEz6IIhgTxQ-D/view?usp=sharing" class="portfolio-link" target="_blank" rel="noopener noreferrer">Portfolio</a>
-                        <button class="portfolio-link js-open-shots" data-images="https://opengraph.githubassets.com/1/Chenjae/Pamuk" data-title="냉파먹">Screenshots</button>
-                    </div>
-                </article>
-
-                <article class="project-card project-card-rich">
-                    <div class="project-media">
-                        <img src="https://opengraph.githubassets.com/1/Chenjae/KoreanAssemble" alt="한국인 모여라 screenshot" loading="lazy">
-                    </div>
-                    <div class="project-header">
-                        <h3>한국인 모여라!</h3>
-                        <span class="project-period">2021.05</span>
-                    </div>
-                    <p>해외 여행 정보 공유 플랫폼</p>
-                    <div class="tag-list">
-                        <span class="tag-sm">Tomcat</span>
-                        <span class="tag-sm">Java</span>
-                        <span class="tag-sm">JavaScript</span>
-                    </div>
-                    <ul class="feature-list">
-                        <li>Java Web Programming을 활용한 Back-end 구축</li>
-                        <li>회원 관리 기능 개발 담당</li>
-                    </ul>
-                    <div class="project-actions">
-                        <a href="https://github.com/Chenjae/KoreanAssemble" class="portfolio-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href="https://drive.google.com/file/d/1-ywHXN6zx7E1o_5xnA_LNxKoqdxPMXuA/view?usp=sharing" class="portfolio-link" target="_blank" rel="noopener noreferrer">Portfolio</a>
-                        <button class="portfolio-link js-open-shots" data-images="https://opengraph.githubassets.com/1/Chenjae/KoreanAssemble" data-title="한국인 모여라!">Screenshots</button>
-                    </div>
-                </article>
-
+        <section class="ticker" aria-label="핵심 키워드">
+            <div class="ticker-track">
+                <span>SPRING FRAMEWORK</span>
+                <span>VUE.JS</span>
+                <span>REACT</span>
+                <span>ENTERPRISE UI</span>
+                <span>SRM / PROCUREMENT</span>
+                <span>RAG / LLM</span>
+                <span>SPRING FRAMEWORK</span>
+                <span>VUE.JS</span>
+                <span>REACT</span>
+                <span>ENTERPRISE UI</span>
+                <span>SRM / PROCUREMENT</span>
+                <span>RAG / LLM</span>
             </div>
         </section>
 
-        <section id="skills">
-            <h2>🛠️ Tech Stack</h2>
-            <div class="skill-grid">
-                <div class="skill-group">
-                <h3>📌 Backend</h3>
-                <div class="tag-list">
-                    <span class="tag">Java</span>
-                    <span class="tag">Spring Framework</span>
-                    <span class="tag">Spring Boot</span>
-                    <span class="tag">Spring Data JPA</span>
-                    <span class="tag">MyBatis</span>
-                    <span class="tag">RESTful API</span>
-                    <span class="tag">MSA</span>
-                </div>
+        <section class="section-grid" id="story">
+            <div class="section-side" data-reveal>
+                <p class="section-kicker">01</p>
+                <h2>Build With Structure</h2>
+                <p>
+                    복잡한 업무 시스템일수록 구조와 우선순위가 선명해야 합니다.
+                    저는 화면의 보기 좋은 결과보다 먼저, 잘 작동하는 흐름을 설계합니다.
+                </p>
             </div>
-            <div class="skill-group">
-                <h3>📌 Frontend</h3>
-                <div class="tag-list">
-                    <span class="tag">Vue.js</span>
-                    <span class="tag">React</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">TypeScript</span>
-                    <span class="tag">HTML/CSS</span>
+            <div class="section-main">
+                <article class="story-card intro-card" data-reveal>
+                    <p class="card-kicker">ABOUT ME</p>
+                    <p>
+                        2022년부터 EMRO에서 삼성전자, 만도, S-OIL, kt cloud 등 다양한 고객사의 구매/SRM 프로젝트에 참여했습니다.
+                        백엔드 API 개발, 프론트엔드 UI 구현, 데이터 연계까지 전체 개발 흐름을 연결하는 역할을 해왔습니다.
+                    </p>
+                    <p>
+                        최근에는 기존 웹 개발 경험 위에 AI 기술을 겹쳐, 실무에 바로 연결되는 서비스 경험을 만드는 방법을 탐구하고 있습니다.
+                        업무 생산성을 높이거나 정보를 더 빠르게 찾게 해주는 도구를 만드는 데 관심이 큽니다.
+                    </p>
+                </article>
+
+                <div class="principles" data-reveal>
+                    <article class="principle-card">
+                        <p class="card-kicker">PRINCIPLE 01</p>
+                        <h3>복잡한 도메인을 단순하게 보이게</h3>
+                        <p>업무 규칙이 많은 화면일수록 사용자는 빠르게 읽고 판단할 수 있어야 합니다.</p>
+                    </article>
+                    <article class="principle-card">
+                        <p class="card-kicker">PRINCIPLE 02</p>
+                        <h3>프론트와 백엔드를 함께 고려한 구현</h3>
+                        <p>API, 상태 변화, 데이터 저장 방식까지 같이 보며 화면의 안정성을 챙깁니다.</p>
+                    </article>
+                    <article class="principle-card">
+                        <p class="card-kicker">PRINCIPLE 03</p>
+                        <h3>실무에서 바로 쓰일 결과물</h3>
+                        <p>예쁜 시안보다 운영 가능한 구조, 유지보수 가능한 코드, 전달력 있는 UX를 우선합니다.</p>
+                    </article>
                 </div>
-            </div>
-            <div class="skill-group">
-                <h3>📌 Database</h3>
-                <div class="tag-list">
-                    <span class="tag">Oracle</span>
-                    <span class="tag">MySQL</span>
-                    <span class="tag">PostgreSQL</span>
-                    <span class="tag">Tibero</span>
-                    <span class="tag">Redis</span>
-                </div>
-            </div>
-            <div class="skill-group">
-                <h3>📌 AI / Machine Learning</h3>
-                <div class="tag-list">
-                    <span class="tag">Python</span>
-                    <span class="tag">LangChain</span>
-                    <span class="tag">RAG</span>
-                    <span class="tag">CrewAI</span>
-                    <span class="tag">Ollama</span>
-                </div>
-            </div>
-            <div class="skill-group">
-                <h3>📌 DevOps & Tools</h3>
-                <div class="tag-list">
-                    <span class="tag">Git</span>
-                    <span class="tag">SVN</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">Maven</span>
-                    <span class="tag">Gradle</span>
-                    <span class="tag">Jira</span>
-                </div>
-            </div>
             </div>
         </section>
 
-        <section id="education">
-            <h2>🧑‍🎓 Education</h2>
-            <div class="education-card">
-                <div class="edu-header">
-                    <h3>현대IT&E SW개발자 양성교육 2기</h3>
-                    <span class="edu-period">2021.07 - 2021.12</span>
-                </div>
-                <p class="edu-org">한국소프트웨어산업협회 / 현대IT&E</p>
-                <ul class="edu-desc">
-                    <li>MSA기반 Spring Boot & Vue.js 프로젝트 수행</li>
-                    <li>Vue.js, Spring Boot, DevOps 등</li>
-                </ul>
+        <section class="section-grid" id="experience">
+            <div class="section-side" data-reveal>
+                <p class="section-kicker">02</p>
+                <h2>Recent Experience</h2>
+                <p>대기업 전자구매와 SRM 도메인 안에서 다양한 프로젝트를 이어 왔습니다.</p>
             </div>
+            <div class="section-main">
+                <article class="experience-feature" data-reveal>
+                    <div class="experience-head">
+                        <div>
+                            <p class="card-kicker">CAREER</p>
+                            <h3>EMRO</h3>
+                            <p class="experience-role">Web Application Developer · 2022.02 - 현재</p>
+                        </div>
+                        <p class="experience-note">Enterprise Application Development / Spring / Vue.js</p>
+                    </div>
+                    <div class="experience-grid">
+                        <div class="experience-summary">
+                            <p>
+                                구매, 협력사 관리, 계약, 운영 고도화 프로젝트를 반복적으로 수행하면서
+                                대규모 업무 시스템에서 필요한 화면 설계와 개발 리듬을 익혔습니다.
+                            </p>
+                            <ul>
+                                <li>API 개발부터 UI 구현, DB 연계까지 전 구간 참여</li>
+                                <li>실사용자 중심의 운영 화면과 업무 플로우 개선 경험</li>
+                                <li>여러 고객사별 요구사항을 빠르게 해석하고 반영</li>
+                            </ul>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span>2025.12 -</span>
+                                <strong>kt P&amp;M 구매 및 공사 자재 시스템</strong>
+                            </div>
+                            <div class="timeline-item">
+                                <span>2025.10 - 2025.12</span>
+                                <strong>S-OIL 기능 개선</strong>
+                            </div>
+                            <div class="timeline-item">
+                                <span>2025.06 - 2025.10</span>
+                                <strong>만도 SRM 구축</strong>
+                            </div>
+                            <div class="timeline-item">
+                                <span>2024.10 - 2025.05</span>
+                                <strong>삼성전자 N-SRM 구축</strong>
+                            </div>
+                            <div class="timeline-item">
+                                <span>2024.02 - 2024.10</span>
+                                <strong>전자계약 시스템 고도화</strong>
+                            </div>
+                            <div class="timeline-item">
+                                <span>2023.06 - 2024.01</span>
+                                <strong>HD현대 HI-SRM 구축</strong>
+                            </div>
+                            <div class="timeline-item">
+                                <span>2023.01 - 2023.06</span>
+                                <strong>kt cloud 구매 시스템 구축</strong>
+                            </div>
+                            <div class="timeline-item">
+                                <span>2022.03 - 2022.08</span>
+                                <strong>삼성서울병원 구매 시스템 UI 개편</strong>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-            <div class="education-card">
-                <div class="edu-header">
-                    <h3>프로젝트 기반의 Spring Cloud 개발자 양성과정</h3>
-                    <span class="edu-period">2021.02 - 2021.07</span>
-                </div>
-                <p class="edu-org">한국소프트웨어진흥협회</p>
-                <ul class="edu-desc">
-                    <li>협업 웹 개발 프로젝트 수행</li>
-                    <li>Spring, Java Web Programming 등</li>
-                </ul>
+                <article class="experience-feature subtle" data-reveal>
+                    <div class="experience-head">
+                        <div>
+                            <p class="card-kicker">EARLIER</p>
+                            <h3>한국생산기술연구원</h3>
+                            <p class="experience-role">Intern · 2020.01 - 2020.06</p>
+                        </div>
+                        <p class="experience-note">지능형 생산 시스템 연구 보조</p>
+                    </div>
+                    <p class="experience-inline">
+                        영상 처리 알고리즘 기반으로 공정 도구 마모를 측정하는 프로그램을 개발해 측정 시간 개선에 기여했습니다.
+                    </p>
+                </article>
             </div>
         </section>
 
-        <section id="certificate">
-            <h2>🪪 Certificate</h2>
-            <div class="cert-list">
-                <div class="cert-item">
-                    <span class="cert-icon">✓</span>
-                    <span>정보처리기사</span>
+        <section class="section-grid" id="projects">
+            <div class="section-side" data-reveal>
+                <p class="section-kicker">03</p>
+                <h2>Selected Projects</h2>
+                <p>개인 프로젝트는 실무에서 다루는 구조를 더 단단하게 만들기 위한 실험실 역할을 합니다.</p>
+            </div>
+            <div class="section-main">
+                <div class="project-grid">
+                    <a class="project-card project-card-dark" data-reveal href="https://github.com/Chenjae-kr/Portfolio-app" target="_blank" rel="noopener noreferrer">
+                        <p class="card-kicker">JAVA / VUE</p>
+                        <div class="project-top">
+                            <h3>Portfolio Manager</h3>
+                            <span>↗</span>
+                        </div>
+                        <p>
+                            주식, ETF, 채권, 현금을 함께 다루는 자산 포트폴리오 관리 서비스.
+                            수익률 계산, 리밸런싱, 백테스트까지 이어지는 투자 분석 흐름을 구현했습니다.
+                        </p>
+                        <ul>
+                            <li>TWR / MWR 기반 수익률 계산</li>
+                            <li>Sharpe, Sortino, MDD 등 리스크 지표 분석</li>
+                            <li>RabbitMQ 기반 비동기 백테스트 처리</li>
+                        </ul>
+                        <div class="chip-row">
+                            <span>Spring Boot 3.3</span>
+                            <span>Vue 3</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card project-card-cream" data-reveal href="https://github.com/Chenjae-kr/BlogPostingAI" target="_blank" rel="noopener noreferrer">
+                        <p class="card-kicker">PYTHON / AI AUTOMATION</p>
+                        <div class="project-top">
+                            <h3>Blog Posting AI</h3>
+                            <span>↗</span>
+                        </div>
+                        <p>
+                            주제를 입력하면 리서치, 글 작성, 교정까지 이어지는 블로그 작성 자동화 시스템입니다.
+                            로컬 LLM과 에이전트 워크플로우를 실제 서비스 형태로 조합해 보았습니다.
+                        </p>
+                        <ul>
+                            <li>Researcher / Writer / Proofreader 에이전트 구성</li>
+                            <li>Serper API 기반 리서치 파이프라인</li>
+                            <li>Ollama 기반 로컬 실행 환경 구성</li>
+                        </ul>
+                        <div class="chip-row">
+                            <span>CrewAI</span>
+                            <span>LangChain</span>
+                            <span>Ollama</span>
+                            <span>Docker</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card project-card-peach" data-reveal href="https://github.com/Chenjae-kr/Spring-Claude-Study" target="_blank" rel="noopener noreferrer">
+                        <p class="card-kicker">SPRING BOOT API</p>
+                        <div class="project-top">
+                            <h3>게시판 REST API</h3>
+                            <span>↗</span>
+                        </div>
+                        <p>
+                            React 프론트엔드와 연결되는 게시판 백엔드 프로젝트입니다.
+                            CRUD, 검색, 계층형 구조를 포함한 기본적인 서비스 아키텍처를 훈련용으로 정리했습니다.
+                        </p>
+                        <ul>
+                            <li>Controller / Service / Repository 구조 설계</li>
+                            <li>Spring Data JPA 기반 데이터 처리</li>
+                            <li>프론트 연동을 고려한 CORS 및 REST 설계</li>
+                        </ul>
+                        <div class="chip-row">
+                            <span>Spring Boot 3.2</span>
+                            <span>JPA</span>
+                            <span>PostgreSQL</span>
+                            <span>Lombok</span>
+                        </div>
+                    </a>
+
+                    <a class="project-card project-card-mint" data-reveal href="https://github.com/Chenjae-kr/React-Claude-Study" target="_blank" rel="noopener noreferrer">
+                        <p class="card-kicker">REACT / TYPESCRIPT</p>
+                        <div class="project-top">
+                            <h3>게시판 프론트엔드</h3>
+                            <span>↗</span>
+                        </div>
+                        <p>
+                            React, TypeScript, Vite 조합으로 만든 SPA 프론트엔드입니다.
+                            목록, 상세, 작성 흐름을 만들면서 화면 상태 관리와 라우팅 구조를 다듬었습니다.
+                        </p>
+                        <ul>
+                            <li>React Router 기반 SPA 화면 구성</li>
+                            <li>TypeScript 기반 컴포넌트 설계</li>
+                            <li>Vitest를 활용한 기본 테스트 학습</li>
+                        </ul>
+                        <div class="chip-row">
+                            <span>React 19</span>
+                            <span>TypeScript</span>
+                            <span>Vite</span>
+                            <span>MUI</span>
+                        </div>
+                    </a>
                 </div>
-                <div class="cert-item">
-                    <span class="cert-icon">✓</span>
-                    <span>SQLD</span>
+            </div>
+        </section>
+
+        <section class="section-grid" id="stack">
+            <div class="section-side" data-reveal>
+                <p class="section-kicker">04</p>
+                <h2>Stack & Learning</h2>
+                <p>실무 중심 기술과 확장 관심사를 분리해, 지금 잘하는 것과 앞으로 키우는 것을 함께 보여줍니다.</p>
+            </div>
+            <div class="section-main">
+                <div class="stack-layout">
+                    <article class="stack-card" data-reveal>
+                        <p class="card-kicker">BACKEND</p>
+                        <h3>비즈니스 로직과 데이터 흐름</h3>
+                        <div class="chip-row dense">
+                            <span>Java</span>
+                            <span>Spring Framework</span>
+                            <span>Spring Boot</span>
+                            <span>Spring Data JPA</span>
+                            <span>MyBatis</span>
+                            <span>REST API</span>
+                            <span>MSA</span>
+                        </div>
+                    </article>
+                    <article class="stack-card" data-reveal>
+                        <p class="card-kicker">FRONTEND</p>
+                        <h3>업무 화면과 사용자 인터랙션</h3>
+                        <div class="chip-row dense">
+                            <span>Vue.js</span>
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </article>
+                    <article class="stack-card" data-reveal>
+                        <p class="card-kicker">DATA / OPS</p>
+                        <h3>운영을 위한 저장소와 협업 도구</h3>
+                        <div class="chip-row dense">
+                            <span>Oracle</span>
+                            <span>MySQL</span>
+                            <span>PostgreSQL</span>
+                            <span>Tibero</span>
+                            <span>Redis</span>
+                            <span>Git</span>
+                            <span>Docker</span>
+                            <span>Maven</span>
+                            <span>Gradle</span>
+                            <span>Jira</span>
+                        </div>
+                    </article>
+                    <article class="stack-card accent" data-reveal>
+                        <p class="card-kicker">NEXT</p>
+                        <h3>AI를 실무형 제품으로 연결하는 실험</h3>
+                        <div class="chip-row dense">
+                            <span>Python</span>
+                            <span>LangChain</span>
+                            <span>RAG</span>
+                            <span>CrewAI</span>
+                            <span>Ollama</span>
+                            <span>Workflow Automation</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-grid" id="contact">
+            <div class="section-side" data-reveal>
+                <p class="section-kicker">05</p>
+                <h2>Education & Contact</h2>
+                <p>학습 이력과 기본 자격, 그리고 연결 가능한 채널입니다.</p>
+            </div>
+            <div class="section-main">
+                <div class="closing-grid">
+                    <article class="closing-card" data-reveal>
+                        <p class="card-kicker">EDUCATION</p>
+                        <div class="closing-block">
+                            <h3>현대IT&amp;E SW개발자 양성교육 2기</h3>
+                            <p>2021.07 - 2021.12 · 한국소프트웨어산업협회 / 현대IT&amp;E</p>
+                        </div>
+                        <div class="closing-block">
+                            <h3>프로젝트 기반 Spring Cloud 개발자 양성과정</h3>
+                            <p>2021.02 - 2021.07 · 한국소프트웨어진흥협회</p>
+                        </div>
+                    </article>
+
+                    <article class="closing-card" data-reveal>
+                        <p class="card-kicker">CERTIFICATE</p>
+                        <div class="chip-row dense">
+                            <span>정보처리기사</span>
+                            <span>SQLD</span>
+                        </div>
+                    </article>
+
+                    <article class="closing-card closing-cta" data-reveal>
+                        <p class="card-kicker">LET'S CONNECT</p>
+                        <h3>구조가 필요한 서비스, 함께 만들 수 있습니다.</h3>
+                        <p>
+                            복잡한 도메인을 차분하게 정리하고,
+                            화면과 기능이 자연스럽게 이어지는 경험을 만드는 일을 좋아합니다.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="button button-dark" href="https://github.com/Chenjae-kr" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a class="button button-light" href="https://chen-jae.tistory.com/" target="_blank" rel="noopener noreferrer">Blog</a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 최인재 (Choi InJae). All rights reserved.</p>
+    <footer class="site-footer">
+        <p>© 2026 Choi InJae. Crafted for clarity, structure, and steady delivery.</p>
     </footer>
 
-    <div id="screenshot-modal" class="screenshot-modal" aria-hidden="true">
-        <div class="screenshot-backdrop" data-close-modal="true"></div>
-        <div class="screenshot-dialog" role="dialog" aria-modal="true" aria-labelledby="screenshot-title">
-            <div class="screenshot-head">
-                <h3 id="screenshot-title">Screenshots</h3>
-                <button class="modal-close" data-close-modal="true" aria-label="Close">✕</button>
-            </div>
-            <div class="screenshot-body">
-                <img id="screenshot-image" src="" alt="Project screenshot">
-            </div>
-        </div>
-    </div>
-
     <script>
-        // Scroll reveal animation
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
+        const revealTargets = document.querySelectorAll('[data-reveal]');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in-up');
-                    observer.unobserve(entry.target);
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.14 });
 
-        document.querySelectorAll('section, .project-card, .experience-card, .education-card').forEach((el) => {
-            el.classList.add('hidden-element');
-            observer.observe(el);
-        });
+        revealTargets.forEach((target) => revealObserver.observe(target));
 
-        // Screenshot modal
-        const modal = document.getElementById('screenshot-modal');
-        const modalTitle = document.getElementById('screenshot-title');
-        const modalImage = document.getElementById('screenshot-image');
+        const header = document.querySelector('.site-header');
+        const updateHeaderState = () => {
+            header.classList.toggle('is-scrolled', window.scrollY > 24);
+        };
 
-        function openModal(title, image) {
-            modalTitle.textContent = `${title} Screenshots`;
-            modalImage.src = image;
-            modalImage.alt = `${title} screenshot`;
-            modal.classList.add('open');
-            modal.setAttribute('aria-hidden', 'false');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            modal.classList.remove('open');
-            modal.setAttribute('aria-hidden', 'true');
-            modalImage.src = '';
-            document.body.style.overflow = '';
-        }
-
-        document.querySelectorAll('.js-open-shots').forEach((btn) => {
-            btn.addEventListener('click', () => {
-                const image = btn.dataset.images;
-                const title = btn.dataset.title || 'Project';
-                openModal(title, image);
-            });
-        });
-
-        modal?.addEventListener('click', (e) => {
-            if (e.target instanceof HTMLElement && e.target.dataset.closeModal === 'true') {
-                closeModal();
-            }
-        });
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && modal?.classList.contains('open')) {
-                closeModal();
-            }
-        });
+        updateHeaderState();
+        window.addEventListener('scroll', updateHeaderState, { passive: true });
     </script>
 </body>
 </html>
