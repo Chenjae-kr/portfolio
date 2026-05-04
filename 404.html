@@ -3,56 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>404 | 최인재 포트폴리오</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .error-page {
-            min-height: 80vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            min-height: calc(100vh - 156px);
+            display: grid;
+            place-items: center;
+            padding: 64px 0;
+        }
+
+        .error-panel {
+            width: min(calc(100% - 40px), 640px);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            background: var(--surface);
+            box-shadow: var(--shadow);
+            padding: 36px;
             text-align: center;
         }
+
         .error-code {
-            font-size: 6rem;
-            font-weight: 800;
-            color: var(--primary);
+            margin: 0 0 12px;
+            color: var(--green);
+            font-size: 64px;
             line-height: 1;
-            margin-bottom: 1rem;
+            font-weight: 800;
         }
-        .error-page p {
-            color: var(--text-light);
-            margin-bottom: 2rem;
+
+        .error-panel h1 {
+            margin: 0 0 12px;
+            font-size: 30px;
+            line-height: 1.2;
         }
-        .back-link {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background: var(--primary);
-            color: #fff;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: background 0.2s;
+
+        .error-panel p {
+            margin: 0;
+            color: var(--muted);
         }
-        .back-link:hover {
-            background: var(--primary-dark);
-            color: #fff;
+
+        .error-panel .button {
+            margin-top: 28px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">Chenjae</a>
+    <header class="site-header" id="top">
+        <nav class="site-nav" aria-label="주요 메뉴">
+            <a href="./" class="brand" aria-label="최인재 포트폴리오 홈">
+                <span class="brand-mark">CI</span>
+                <span class="brand-text">
+                    <strong>최인재</strong>
+                    <span>Enterprise Web Developer</span>
+                </span>
+            </a>
         </nav>
     </header>
-    <main>
-        <div class="error-page">
-            <div class="error-code">404</div>
+
+    <main class="error-page">
+        <section class="error-panel">
+            <p class="error-code">404</p>
             <h1>페이지를 찾을 수 없습니다</h1>
-            <p>요청하신 페이지가 존재하지 않습니다.</p>
-            <a href="/" class="back-link">홈으로 돌아가기</a>
-        </div>
+            <p>요청하신 주소가 변경되었거나 존재하지 않습니다.</p>
+            <a href="./" class="button primary">홈으로 돌아가기</a>
+        </section>
     </main>
 </body>
 </html>
