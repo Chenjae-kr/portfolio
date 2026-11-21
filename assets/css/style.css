@@ -1,5 +1,5 @@
 :root {
-    --bg: #f6f7f2;
+    --bg: #f5f8f7;
     --surface: #ffffff;
     --surface-alt: #eef3f0;
     --ink: #15191c;
@@ -9,7 +9,7 @@
     --green: #1f6f5b;
     --blue: #245c8f;
     --amber: #b56b24;
-    --shadow: 0 18px 48px rgba(21, 25, 28, 0.08);
+    --shadow: 0 8px 28px rgba(21, 25, 28, 0.035);
     --radius: 8px;
     --container: 1160px;
     --ease: 220ms ease;
@@ -28,8 +28,9 @@ body {
     color: var(--ink);
     background: var(--bg);
     font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", sans-serif;
+    font-size: 1rem;
     line-height: 1.7;
-    overflow-x: hidden;
+    word-break: keep-all;
 }
 
 body,
@@ -49,11 +50,33 @@ a {
     text-decoration: none;
 }
 
-p,
-h1,
-h2,
-h3 {
+p, h1, h2, h3, h4 {
     overflow-wrap: anywhere;
+}
+
+section[id], #main-content {
+    scroll-margin-top: 104px;
+}
+
+:focus-visible {
+    outline: 3px solid var(--green);
+    outline-offset: 5px;
+}
+
+.skip-link {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 30;
+    padding: 12px 20px;
+    background: var(--ink);
+    color: white;
+    border-radius: var(--radius);
+    transform: translateY(-150%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
 }
 
 .container {
@@ -65,7 +88,7 @@ h3 {
     position: sticky;
     top: 0;
     z-index: 20;
-    background: rgba(246, 247, 242, 0.9);
+    background: rgba(245, 248, 247, 0.95);
     border-bottom: 1px solid transparent;
     backdrop-filter: blur(14px);
     transition: border-color var(--ease), box-shadow var(--ease);
@@ -122,7 +145,7 @@ h3 {
 .metric-strip span,
 .timeline-item time {
     color: var(--muted);
-    font-size: 13px;
+    font-size: 0.875rem;
     font-weight: 700;
 }
 
@@ -137,6 +160,9 @@ h3 {
 }
 
 .nav-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     color: var(--muted);
     transition: color var(--ease);
 }
@@ -161,10 +187,10 @@ h3 {
 
 .hero-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 420px;
-    gap: 64px;
+    grid-template-columns: minmax(0, 1fr) 400px;
+    gap: 56px;
     align-items: center;
-    padding: 72px 0 48px;
+    padding: 64px 0 48px;
 }
 
 .hero-copy {
@@ -180,13 +206,29 @@ h3 {
 .section-heading h2,
 .section-title h2 {
     margin: 0;
-    line-height: 1.08;
+    line-height: 1.25;
     font-weight: 800;
 }
 
 .hero h1 {
     max-width: 760px;
-    font-size: 58px;
+    font-size: clamp(2.125rem, 4.4vw, 3.5rem);
+    letter-spacing: -0.045em;
+}
+
+.hero h1 em {
+    font-style: normal;
+    color: var(--green);
+}
+
+.hero .eyebrow {
+    color: var(--green);
+    margin-bottom: 22px;
+}
+
+.hero-lead strong {
+    color: var(--ink);
+    font-weight: 600;
 }
 
 .hero-lead {
@@ -223,7 +265,8 @@ h3 {
 
 .button.primary {
     color: #ffffff;
-    background: var(--ink);
+    background: var(--green);
+    border-color: var(--green);
 }
 
 .button.secondary {
@@ -270,15 +313,15 @@ h3 {
 
 .profile-card {
     display: grid;
-    grid-template-columns: 96px minmax(0, 1fr);
-    gap: 20px;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 18px;
     align-items: center;
     padding: 22px;
 }
 
 .profile-image {
-    width: 96px;
-    height: 96px;
+    width: 72px;
+    height: 72px;
     border-radius: var(--radius);
     object-fit: cover;
     border: 1px solid var(--line);
@@ -289,6 +332,14 @@ h3 {
     margin: 0 0 8px;
     font-size: 30px;
     line-height: 1.1;
+}
+
+.profile-card h2 span,
+.experience-title .company-name {
+    color: var(--muted);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 4px;
 }
 
 .profile-card p,
@@ -331,8 +382,8 @@ h3 {
 
 .signal-list li {
     display: grid;
-    grid-template-columns: 36px minmax(0, 1fr);
-    gap: 8px 14px;
+    grid-template-columns: 62px minmax(0, 1fr);
+    gap: 6px 12px;
     padding: 18px 0;
     border-top: 1px solid var(--line);
 }
@@ -348,17 +399,19 @@ h3 {
 
 .signal-list span {
     color: var(--green);
+    font-size: 0.875rem;
     font-weight: 800;
+    padding-top: 2px;
 }
 
 .signal-list strong {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .signal-list p {
     grid-column: 2;
     margin: -4px 0 0;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .metric-strip {
@@ -387,7 +440,7 @@ h3 {
 }
 
 .metric-strip strong {
-    font-size: 28px;
+    font-size: 1.625rem;
     line-height: 1.1;
 }
 
@@ -410,7 +463,8 @@ h3 {
 
 .section-heading h2,
 .section-title h2 {
-    font-size: 42px;
+    font-size: 2.375rem;
+    letter-spacing: -0.035em;
 }
 
 .section-heading p:last-child,
@@ -427,6 +481,68 @@ h3 {
 .text-panel {
     padding: 28px;
     font-size: 17px;
+}
+
+.text-panel p:first-child {
+    margin-top: 0;
+}
+
+.text-panel strong,
+.plain-list strong {
+    color: var(--ink);
+}
+
+.approach {
+    margin-top: 48px;
+}
+
+.approach-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.approach-heading h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.approach-heading > p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.875rem;
+}
+
+.process-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.process-list li {
+    border-top: 3px solid var(--green);
+    padding-top: 20px;
+}
+
+.process-list .label {
+    color: var(--green);
+    margin-bottom: 8px;
+}
+
+.process-list h4 {
+    margin: 0 0 12px;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.process-list li > p:last-child {
+    color: var(--muted);
+    margin: 0;
 }
 
 .capability-grid {
@@ -510,6 +626,11 @@ h3 {
     gap: 10px;
 }
 
+.timeline-heading {
+    font-size: 1.125rem;
+    margin: 20px 0 0;
+}
+
 .timeline-item {
     display: grid;
     grid-template-columns: 170px minmax(0, 1fr);
@@ -524,7 +645,6 @@ h3 {
 }
 
 .section-title {
-    max-width: 760px;
     margin-bottom: 32px;
 }
 
@@ -579,6 +699,18 @@ h3 {
     margin: 0;
 }
 
+.project-card .project-detail {
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+}
+
+.project-link {
+    color: var(--green);
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding-top: 4px;
+}
+
 .tag-row {
     display: flex;
     flex-wrap: wrap;
@@ -595,7 +727,7 @@ h3 {
     background: #f7f9f7;
     padding: 5px 9px;
     color: var(--ink);
-    font-size: 13px;
+    font-size: 0.875rem;
     font-weight: 800;
 }
 
@@ -613,13 +745,17 @@ h3 {
 }
 
 .stack-card.accent {
-    background: #f5efe5;
-    border-color: #e4cda8;
+    background: #eaf3ef;
+    border-color: #acc6b9;
 }
 
 .contact-layout {
     display: grid;
     gap: 36px;
+}
+
+.contact-layout > .section-heading {
+    position: static;
 }
 
 .contact-grid {
@@ -675,17 +811,6 @@ h3 {
     font-weight: 800;
 }
 
-[data-reveal] {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 620ms ease, transform 620ms ease;
-}
-
-[data-reveal].is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 @media (max-width: 1080px) {
     .hero-layout,
     .split-layout {
@@ -703,28 +828,37 @@ h3 {
     }
 
     .hero h1 {
-        font-size: 54px;
+        font-size: 3.375rem;
+    }
+
+    .hero-aside {
+        grid-template-columns: 0.85fr 1.15fr;
+        align-items: start;
     }
 
     .metric-strip {
-        margin-top: 48px;
+        margin-top: 0;
     }
 }
 
 @media (max-width: 860px) {
+    section[id], #main-content {
+        scroll-margin-top: 170px;
+    }
+
     .site-nav {
         min-height: auto;
         padding: 14px 0;
         align-items: flex-start;
         flex-direction: column;
+        gap: 10px;
     }
 
     .nav-links {
         width: 100%;
-        overflow-x: auto;
+        flex-wrap: wrap;
         justify-content: flex-start;
-        gap: 18px;
-        padding-bottom: 4px;
+        gap: 0 18px;
     }
 
     .section-pad {
@@ -736,11 +870,16 @@ h3 {
     }
 
     .hero h1 {
-        font-size: 42px;
+        font-size: 2.625rem;
     }
 
     .hero-lead {
-        font-size: 17px;
+        font-size: 1.0625rem;
+    }
+
+    .hero-aside,
+    .process-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .metric-strip,
@@ -774,34 +913,55 @@ h3 {
 @media (max-width: 620px) {
     .container,
     .site-nav {
-        width: min(calc(100% - 24px), var(--container));
+        width: min(calc(100% - 40px), var(--container));
     }
 
     .brand-text span {
-        font-size: 12px;
+        font-size: 0.8125rem;
     }
 
     .hero h1 {
-        font-size: 34px;
+        font-size: clamp(1.75rem, 7.8vw, 2.625rem);
     }
 
     .section-heading h2,
     .section-title h2 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
-    .hero-actions,
-    .button {
-        width: 100%;
+    .hero-layout {
+        padding-top: 36px;
+        gap: 32px;
     }
 
-    .profile-card {
+    .hero-aside,
+    .process-list {
         grid-template-columns: 1fr;
     }
 
+    .approach-heading {
+        display: block;
+    }
+
+    .approach-heading > p {
+        margin-top: 6px;
+    }
+
+    .hero-actions .button {
+        flex: 1 1 auto;
+    }
+
+    .hero-copy .hero-actions .primary {
+        flex-basis: 100%;
+    }
+
+    .profile-card {
+        grid-template-columns: 64px minmax(0, 1fr);
+    }
+
     .profile-image {
-        width: 84px;
-        height: 84px;
+        width: 64px;
+        height: 64px;
     }
 
     .experience-title {
@@ -818,7 +978,44 @@ h3 {
     }
 
     .contact-card h3 {
-        font-size: 28px;
+        font-size: 1.75rem;
+    }
+
+    .metric-strip strong {
+        font-size: 1.375rem;
+    }
+
+    .signal-card,
+    .profile-card,
+    .text-panel,
+    .experience-card,
+    .project-card,
+    .stack-card,
+    .info-card {
+        padding: 20px;
+    }
+}
+
+@media print {
+    .site-header, .skip-link, .hero-actions, .site-footer {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .section, .section-pad {
+        padding: 24px 0;
+    }
+
+    .section-heading {
+        position: static;
+    }
+
+    article, .timeline-item, .process-list li {
+        break-inside: avoid;
+        box-shadow: none;
     }
 }
 
