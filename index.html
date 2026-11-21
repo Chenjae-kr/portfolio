@@ -198,7 +198,7 @@
                 <article class="case-card interface-overview" aria-labelledby="integration-title">
                     <header class="case-heading">
                         <p class="eyebrow">여러 프로젝트에 걸친 연계 경험</p>
-                        <h3 id="integration-title">내·외부 시스템 인터페이스 개발</h3>
+                        <h3 id="integration-title">내·외부 시스템 인터페이스 개발·운영 개선</h3>
                         <p class="case-summary">ERP, 결재, 기업 신용정보 등 내·외부 시스템을 대상으로 데이터 송수신 인터페이스를 개발했습니다.</p>
                     </header>
                     <ol class="case-flow case-flow-three" aria-label="인터페이스 업무 경험">
@@ -206,6 +206,27 @@
                         <li><span class="flow-step" aria-hidden="true">02</span><strong>개발·업무 반영</strong><p>송수신 기능, 데이터 형식·코드 변환, 수신 데이터의 업무 반영 로직 구현</p></li>
                         <li><span class="flow-step" aria-hidden="true">03</span><strong>테스트·오류 수정</strong><p>연계 테스트와 오류 원인 분석·수정</p></li>
                     </ol>
+                    <div class="case-block case-columns">
+                        <div>
+                            <h4>운영·개발 담당자를 위한 재처리 기능</h4>
+                            <p>송수신 데이터와 성공·실패 여부, 오류 내용을 이력으로 저장했습니다. 운영 담당자와 개발자가 화면에서 이력을 조회하고 실패한 건을 재처리할 수 있도록 구현했습니다.</p>
+                        </div>
+                        <div>
+                            <h4>오류 유형에 따른 복구 방식</h4>
+                            <ul class="plain-list">
+                                <li><strong>통신 오류</strong> — 자동 재시도로 일시적인 오류에 대응</li>
+                                <li><strong>데이터 오류</strong> — 데이터를 수정한 뒤 수동 재처리</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="case-block">
+                        <h4>연계 시스템별 중복 반영 방지</h4>
+                        <p>연계 대상의 규격과 처리 방식에 따라 고유번호·처리 상태를 확인하거나 기존 데이터를 갱신하도록 구현했습니다. 수신 시스템에서 중복 여부를 판단하는 경우에는 해당 규격에 맞춰 연계했습니다.</p>
+                    </div>
+                    <div class="case-outcome">
+                        <h4>운영 개선 결과</h4>
+                        <p>화면에서 실패 건을 재처리할 수 있게 해 별도 수동 조치를 줄였으며, 자동 재시도를 통해 일시적인 통신 오류에 대한 반복 대응을 줄였습니다.</p>
+                    </div>
                 </article>
             </div>
         </section>
